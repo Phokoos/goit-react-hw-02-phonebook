@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './contactList.module.css';
+// import css from './contactList.module.css';
 
 const ContactList = ({ contacts, filter }) => {
   return (

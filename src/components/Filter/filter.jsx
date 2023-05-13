@@ -1,4 +1,4 @@
-import css from './filter.module.css';
+// import css from './filter.module.css';
 import PropTypes from 'prop-types';
 
 const Filter = ({ handleInputChange, filter }) => {
