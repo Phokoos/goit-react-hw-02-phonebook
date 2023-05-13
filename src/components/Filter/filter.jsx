@@ -1,20 +1,19 @@
-// import css from './filter.module.css';
+import css from './filter.module.css';
 import PropTypes from 'prop-types';
 
 const Filter = ({ handleInputChange, filter }) => {
   return (
-    <div>
-      <label>
-        Find contacts by name
-        <input
-          onChange={handleInputChange}
-          value={filter}
-          type="text"
-          name="filter"
-          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-        />
-      </label>
-    </div>
+    <label className={css.phonebookFilter__label}>
+      Find contacts by name
+      <input
+        className={css.phonebookFilter__input}
+        onChange={handleInputChange}
+        value={filter}
+        type="text"
+        name="filter"
+        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+      />
+    </label>
   );
 };
 
